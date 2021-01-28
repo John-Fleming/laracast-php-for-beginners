@@ -1,9 +1,6 @@
 <?php
 
-// $app['database']->insert('users', [
-//   'name' => $_POST['name']
-// ]);
-$query->insert('users', [
+App::get('database')->insert('users', [
   'name' => $_POST['name']
 ]);
 
