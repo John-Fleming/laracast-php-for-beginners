@@ -28,9 +28,22 @@ class router
   {
     if (array_key_exists($url, $this->routes[$requestType]))
     {
-      return $this->routes[$requestType][$url];
+      return $this->callAction(
+        ...explode('@', $this->routes[$requestType][$url])
+      );
     }
 
     throw new Exception('No route defined for this URL');
+  }
+
+  protected function callAction($controller, $action)
+  {
+    $controller = new $controller;
+
+    if (! method_exists($controller, $action)) {
+      throw new Exception("{$controller} does not respond to the {$action} action");
+    }
+
+    return $controller->$action();
   }
 }

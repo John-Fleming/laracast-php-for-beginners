@@ -13,10 +13,12 @@ class ComposerStaticInit19efe6920aba10495abdce5b02ed18f7
         'Composer\\Autoload\\ComposerStaticInit19efe6920aba10495abdce5b02ed18f7' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
+        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'Post' => __DIR__ . '/../..' . '/array-methods/index.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/request.php',
         'Task' => __DIR__ . '/../..' . '/core/Task.php',
+        'UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
         'router' => __DIR__ . '/../..' . '/core/router.php',
     );
 
